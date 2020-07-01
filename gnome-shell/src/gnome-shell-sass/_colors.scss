@@ -5,7 +5,7 @@
 
 $base_color: if($variant == 'light', $light_ui_100, $dark_ui_900); 
 $text_color: if($variant == 'light', $black, $white);
-$bg_color: if($variant == 'light', light_ui_300, $dark_ui_700);
+$bg_color: if($variant == 'light', $light_ui_300, $dark_ui_700);
 $fg_color: if($variant == 'light', $dark_ui_900, $light_ui_700);
 
 $dark_bg_color: $dark_ui_700;
