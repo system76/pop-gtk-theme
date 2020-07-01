@@ -3,13 +3,13 @@
 
 @import 'pop_os-colors';
 
-$base_color: if($variant == 'light', #ffffff, #272727); 
-$text_color: if($variant == 'light', #272727, #cccccc);
-$bg_color: if($variant == 'light', #F6F6F6, #303030);
-$fg_color: if($variant == 'light', #292929, #cccccc);
+$base_color: if($variant == 'light', $light_ui_100, $dark_ui_900); 
+$text_color: if($variant == 'light', $dark_ui_900, $light_ui_900);
+$bg_color: if($variant == 'light', $light_ui_300, $dark_ui_500);
+$fg_color: if($variant == 'light', $dark_ui_700, $light_ui_900);
 
-$selected_fg_color: #000;
-$selected_bg_color: if($variant=='light', #48b9c7, #94EBEB);
+$selected_fg_color: $black;
+$selected_bg_color: if($variant=='light', $blue, $blue);
 
 $selected_borders_color: if($variant== 'light', darken($selected_bg_color, 15%), darken($selected_bg_color, 30%));
 $borders_color: if($variant == 'light', rgba(darken($bg_color, 18%), 0.5), rgba(darken($bg_color, 10%), 0.5));
@@ -19,7 +19,7 @@ $link_color: $text_blue;
 $link_visited_color: $text_orange;
 $top_hilight: $borders_edge;
 $dark_fill: mix($borders_color, $bg_color, 50%);
-$headerbar_color: if($variant == 'light', #574F4A, #363636);
+$headerbar_color: if($variant == 'light', $dark_warm_grey, $dark_ui_300);
 $menu_color: if($variant == 'light', $base_color, mix($bg_color, $base_color, 20%));
 $popover_bg_color: $bg_color;
 $popover_hover_color: lighten($bg_color, 5%);
@@ -29,25 +29,25 @@ $scrollbar_slider_color: mix($fg_color, $bg_color, 60%);
 $scrollbar_slider_hover_color: mix($fg_color, $bg_color, 80%);
 $scrollbar_slider_active_color: if($variant=='light', darken($selected_bg_color, 10%), lighten($selected_bg_color, 10%));
 
-$warning_color: if($variant=='light', #FEDB40, #FFF19E);
-$error_color: if($variant=='light', #E56A54, #EA9090);
-$success_color: if($variant=='light', #82BF8C, #90CFB0);
-$destructive_color: if($variant=='light', #E56A54, #EA9090);
+$warning_color: if($variant=='light', $yellow, $yellow);
+$error_color: if($variant=='light', $red, $red);
+$success_color: if($variant=='light', $green, $green);
+$destructive_color: if($variant=='light', $red, $red);
 
 $osd_fg_color: #eeeeec;
 $osd_text_color: white;
-$osd_bg_color: transparentize(darken(desaturate(#3d3846, 100%), 4%),0.3);
+$osd_bg_color: transparentize(darken(desaturate($dark_ui_500, 100%), 4%),0.3);
 $osd_insensitive_bg_color: transparentize(mix($osd_fg_color, opacify($osd_bg_color, 1), 10%), 0.5);
 $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 50%);
-$osd_borders_color: transparentize(black, 0.3);
+$osd_borders_color: transparentize($black, 0.3);
 
 $sidebar_bg_color: mix($bg_color, $base_color, 50%);
 $base_hover_color: transparentize($fg_color, 0.95);
 
 $tooltip_borders_color: transparentize(white, 0.9);
-$shadow_color: transparentize(black, 0.9);
+$shadow_color: transparentize($black, 0.9);
 
-$drop_target_color: #4e9a06;
+$drop_target_color: $text_green;
 
 //insensitive state derived colors
 $insensitive_fg_color: mix($fg_color, $bg_color, 50%);
@@ -71,10 +71,10 @@ $backdrop_scrollbar_slider_color: mix($backdrop_fg_color, $backdrop_bg_color, 40
 $backdrop_menu_color: if($variant == 'light', $backdrop_base_color, mix($backdrop_bg_color, $backdrop_base_color, 20%));
 
 //special cased widget colors
-$suggested_bg_color: if($variant=='light', #82BF8C, #90CFB0);
+$suggested_bg_color: if($variant=='light', $green, $green);
 $suggested_border_color: if($variant=='light', darken($suggested_bg_color, 15%), $suggested_bg_color);
-$progress_bg_color: if($variant=='light', #63B1BC, #6ACAD8);
+$progress_bg_color: if($variant=='light', $blue, $blue);
 $progress_border_color: if($variant=='light', darken($progress_bg_color, 15%), darken($progress_bg_color, 30%));
-$checkradio_bg_color: if($variant=='light', #FFAD00, #FBB86C);
-$checkradio_fg_color: #000;
+$checkradio_bg_color: if($variant=='light', $orange, $orange);
+$checkradio_fg_color: #$black;
 $spinner_fg_color: $fg_color;
