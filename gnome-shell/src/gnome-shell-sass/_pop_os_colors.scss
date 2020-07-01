@@ -5,8 +5,8 @@ $highlights_orange: if($variant=='light', #FBB86C, #FFAD00);
 $text_orange: if($variant=='light', #AF5C02, #FFD7A1);
 
 // blue
-$blue: if($variant=='light', #63B1BC, #6ACAD8);
-$highlights_blue: if($variant=='light', #6ACAD8, #63B1BC);
+$blue: if($variant=='light', #48B9C7, #94EBEB);
+$highlights_blue: if($variant=='light', #94EBEB, #48B9C7);
 $text_blue: if($variant=='light', #00496D, #94EBEB);
 
 // green
@@ -20,8 +20,8 @@ $highlights_red: if($variant=='light', #EA9090, #E56A54);
 $text_red: if($variant=='light', #A0252B, #FFB5B5);
 
 // yellow
-$yellow: if($variant=='light', #FEDB40, #F9D87A);
-$highlights_yellow: if($variant=='light', #FFF19E, #FEDB40);
+$yellow: if($variant=='light', #FEDB40, #F7E062);
+$highlights_yellow: if($variant=='light', #F7E062, #FEDB40);
 $text_yellow: if($variant=='light', #966800, #FFF19E);
 
 // purple
@@ -41,7 +41,7 @@ $text_indigo: if($variant=='light', #102A4C, #BDDBFF);
 
 // warm_grey
 $warm_grey: #ADA29E;
-$light_warm_grey: #9B8EAE;
+$light_warm_grey: #9B8E8A;
 $dark_warm_grey: #574F4A;
 
 // ui
@@ -61,7 +61,7 @@ $dark_neutral_grey_700: #222;
 $dark_neutral_grey_900: #111;
 
 // Light UI
-$light_ui_100: #FCFCFC;
+$light_ui_100: #FFF;
 $light_ui_300: #F6F6F6;
 $light_ui_500: #EDEDED;
 $light_ui_700: #E6E6E6;
@@ -77,6 +77,3 @@ $dark_ui_900: #2B2928;
 $white: #FFF;
 $black: #000;
 $mid_grey: #888;
-
-$gdm_grey: #36322f;
-$close_button_color: mix($orange, $red, 50%);
