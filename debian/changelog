@@ -1,3 +1,9 @@
+pop-gtk-theme (5.4.0) hirsute; urgency=medium
+
+  * Suport for COSMIC
+
+ -- Ian Santopietro <ian@system76.com>  Wed, 14 Apr 2021 14:55:20 -0600
+
 pop-gtk-theme (5.3.3) groovy; urgency=medium
 
   * Ensure overview search entry doesn't become transparent in hover.
