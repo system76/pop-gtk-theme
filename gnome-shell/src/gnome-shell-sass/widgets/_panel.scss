@@ -84,6 +84,16 @@ $panel_height: 1.86em;
       background-color: rgba(0, 0, 0, 0.01);
       box-shadow: inset 0 -2px 0 0 lighten($entry_color,5%);
     }
+
+    &#panelWorkspaces, &#panelApplications {
+      margin: 2px 4px;
+      border-radius: 9999px;
+
+      &:active, &:overview, &:focus, &:checked {
+        background-color: rgba($white, 0.2);
+        box-shadow: none;
+      }
+    }
   }
 
   .panel-button.clock-display {
